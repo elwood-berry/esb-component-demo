@@ -1,8 +1,10 @@
+<!--
+  APPLICATION NAME GOES HERE
+  Author: 'me@elwoodberry.com'
+  This code is brought to you by Elwood Berry @www.elwoodberry.com 
+-->
+
 <mat-card class="core-home-card">
-  <mat-card-header class="">
-    <!-- <mat-card-title>Card Title</mat-card-title>
-    <mat-card-subtitle>Card Title</mat-card-subtitle> -->
-  </mat-card-header>
 
   <!-- 
     IMG OVERLAY
@@ -13,11 +15,11 @@
     <!-- HEADER: IMG OVERLAY-->
     <header fxLayout="row">
       <div class="core-col" fxFlex="15%">
-        <img class="" src="https://ap.rdcpix.com/1269221619/88ab3e5ba67115f2bc21dbc9082db210o-c0s.jpg" alt="broker name goes here">
+        <img class="" [src]="imgBroker" [alt]="{broker}}">
       </div>
       <div class="core-col" fxFlex="85%">
-        <div class="dsply__broker-name">broker name goes here</div>
-        <mat-chip>New <span>- 18 Hours Ago</span> </mat-chip>
+        <div class="dsply__broker-name">{{broker}}</div>
+        <mat-chip *ngIf="new">New <span>- 18 Hours Ago</span> </mat-chip>
       </div>
     </header>
 
@@ -49,8 +51,9 @@
     <div class=""></div>
 
     <div class="">
-      1000 Somewhere Dr. <br>
-    Dallas, TX 75069
+      {{ address1 }}<br>
+      {{ address2 }}<br>
+      {{ city }}, {{ state }} {{ zip }}
     </div>
   </mat-card-content>
 
@@ -61,3 +64,13 @@
   <mat-card-footer>Footer</mat-card-footer>
 
 </mat-card>
+
+
+
+<!--
+
+-------------------------------------------------
+Copyright 2021 ElwoodBerry.com LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at http://www.elwoodberry.com 
+
+-->

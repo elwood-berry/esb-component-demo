@@ -1,0 +1,54 @@
+[{
+	"listing-id": 0,
+	"broker": "broker name goes here",
+	"new": false,
+	"open-house-date": "MM/DD",
+	"status": ["For Sale"],
+	"img-home": [{
+		"url": "www.domain.com"
+	}],
+	"img-broker": [{
+		"url": "www.domain.com"
+	}],
+	"price": 1000000,
+	"bed": 100,
+	"bath": 100,
+	"sqft": 10000,
+	"sqftlot": 10000,
+	"likes": 1,
+	"url": "www.domain.com",
+	"address1": "1000 Somewhere Dr.",
+	"address2": "Suite 420",
+	"city": "Dallas",
+	"state": [{
+		"abbrv": "TX",
+		"full": "Texas"
+	}]
+},
+{
+	"listing-id": 1,
+	"broker": "2 broker name goes here",
+	"new": false,
+	"open-house-date": "MM/DD",
+	"status": ["For Sale"],
+	"img-home": [{
+		"url": "www.domain.com"
+	}],
+	"img-broker": [{
+		"url": "www.domain.com"
+	}],
+	"price": 2000000,
+	"bed": 200,
+	"bath": 200,
+	"sqft": 20000,
+	"sqftlot": 20000,
+	"likes": 2,
+	"url": "www.domain.com",
+	"address1": "2000 Somewhere Dr.",
+	"address2": "Suite 220",
+	"city": "Dallas",
+	"state": [{
+		"abbrv": "TX",
+		"full": "Texas"
+	}]
+}]

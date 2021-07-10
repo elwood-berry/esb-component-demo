@@ -23,7 +23,11 @@ export class AppComponent {
       city: 'Dallas',
       imgBroker: [
         {
-          url: 'www.domain.com'
+          imgBrokerId: 0,
+          imgName: 'Name of the image goes here.',
+          imgDescription: 'Description of the image goes here.',
+          url:
+            'https://ap.rdcpix.com/1269221619/88ab3e5ba67115f2bc21dbc9082db210o-c0s.jpg'
         }
       ],
       imgHome: [
@@ -32,14 +36,14 @@ export class AppComponent {
           imgName: 'Name of the image goes here.',
           imgDescription: 'Description of the image goes here.',
           url:
-            'https://ap.rdcpix.com/1269221619/88ab3e5ba67115f2bc21dbc9082db210o-c0s.jpg'
+            'https://ap.rdcpix.com/44ba5e8fcd0439cbe78b772b6ed1d482l-m1257779790od-w480_h360.jpg'
         },
         {
           imgHomeId: 1,
           imgName: 'Name of the image goes here.',
           imgDescription: 'Description of the image goes here.',
           url:
-            'https://ap.rdcpix.com/1269221619/88ab3e5ba67115f2bc21dbc9082db210o-c0s.jpg'
+            'https://ap.rdcpix.com/44ba5e8fcd0439cbe78b772b6ed1d482l-m1257779790od-w480_h360.jpg'
         }
       ],
       likes: 1,

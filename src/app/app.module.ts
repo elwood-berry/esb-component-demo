@@ -8,6 +8,7 @@ import { MaterialLibraryModule } from '../assets/libs/material/material-library/
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
+import { HomeCardComponent } from './components/home-card/home-card.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     MaterialLibraryModule
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomeCardComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

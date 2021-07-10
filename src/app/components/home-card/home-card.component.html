@@ -1,15 +1,40 @@
-<mat-card class="">
+<mat-card class="core-home-card">
   <mat-card-header class="">
     <!-- <mat-card-title>Card Title</mat-card-title>
     <mat-card-subtitle>Card Title</mat-card-subtitle> -->
   </mat-card-header>
 
-  <div class="">
-    <div class="">broker name goes here</div>
-    <img class="" src="https://ap.rdcpix.com/1269221619/88ab3e5ba67115f2bc21dbc9082db210o-c0s.jpg" alt="broker name goes here">
-    <div class="">New <span>18 Hours Ago</span> </div>
-    <div class="">link icon/button</div>
-    <div class="">Like Icon</div>
+  <!-- 
+    IMG OVERLAY
+    Lays over the image slide show.
+  -->
+  <div class="core-img-overlay">
+
+    <!-- HEADER: IMG OVERLAY-->
+    <header fxLayout="row">
+      <div class="core-col" fxFlex="15%">
+        <img class="" src="https://ap.rdcpix.com/1269221619/88ab3e5ba67115f2bc21dbc9082db210o-c0s.jpg" alt="broker name goes here">
+      </div>
+      <div class="core-col" fxFlex="85%">
+        <div class="dsply__broker-name">broker name goes here</div>
+        <mat-chip>New <span>- 18 Hours Ago</span> </mat-chip>
+      </div>
+    </header>
+
+    <!-- BODY: IMG OVERLAY-->
+    <div class="overlay-body"></div>
+
+    <!-- FOOTER: IMG OVERLAY-->
+    <footer fxLayout="row">
+      <button mat-fab aria-label="Link to external website about this property">
+        <mat-icon>language</mat-icon>
+      </button>
+
+      <button mat-fab aria-label="Favorite this property to see it later">
+        <mat-icon>favorite</mat-icon>
+      </button>
+    </footer>
+
   </div>
 
   <img mat-card-image src="https://ap.rdcpix.com/44ba5e8fcd0439cbe78b772b6ed1d482l-m1257779790od-w480_h360.jpg" alt="Photo of a Shiba Inu">

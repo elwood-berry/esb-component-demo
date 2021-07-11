@@ -6,7 +6,7 @@ mixins
 */
 
 $demo-color-alpha: #ffee0038;
-$demo-color-bravo: #ff000038;
+$demo-color-bravo: #000; // #ff000038
 
 // MIXINS.
 @mixin homeStats {
@@ -32,7 +32,7 @@ HOME CARD
 .core-home-card {
   border-radius: 0;
   box-shadow: none;
-  margin: 0 auto;
+  margin-left: 15px;
   padding: 15px 0 0;
   width: 450px;
 
@@ -79,8 +79,18 @@ HOME CARD
   }
 }
 
-/*
+//IMAGE.
+.img-container {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
 
+/*
+OVERLAY
 */
 .core-img-overlay {
   // background-color: rgba(255, 255, 0, 0.35);

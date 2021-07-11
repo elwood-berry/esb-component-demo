@@ -19,7 +19,7 @@ export class AppComponent {
       address2: 'Suite 420',
       bath: 100,
       bed: 100,
-      broker: '99 broker name goes here',
+      broker: 'Big Dawg Realty Broker',
       city: 'Dallas',
       imgBroker: [
         {

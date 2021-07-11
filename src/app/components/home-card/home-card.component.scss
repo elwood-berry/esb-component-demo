@@ -2,9 +2,32 @@
 MAP VARIABLES
 Colors
 Font Sizes
+mixins
 */
 
+$demo-color-alpha: #ffee0038;
+$demo-color-bravo: #ff000038;
+
+// MIXINS.
+@mixin homeStats {
+  color: $demo-color-bravo;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 5px;
+
+  span {
+    font-weight: 100;
+  }
+}
+
+@mixin homeDisplaySection {
+  // background-color: $demo-color-alpha;
+  margin: 0 0 8px 0;
+}
+
 /*
+[core]
+HOME CARD 
 */
 .core-home-card {
   border-radius: 0;
@@ -17,6 +40,42 @@ Font Sizes
   .mat-card-image {
     margin: 0;
     width: 100%;
+  }
+
+  // CONTENT
+  // ---------------------------
+
+  // PRICE INFO
+  .dsply__price-info {
+    @include homeDisplaySection;
+
+    .dsply__status {
+      color: $demo-color-bravo;
+      font-size: 14px;
+    }
+    .dsply__price {
+      color: $demo-color-bravo;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  // HOME STATS.
+  .dsply__home-stats {
+    @include homeDisplaySection;
+
+    .dsply__bed,
+    .dsply__bath,
+    .dsply__sqft,
+    .dsply__sqftlot {
+      @include homeStats;
+    }
+  }
+
+  // FULL ADDRESS.
+  .dsply__full-address {
+    @include homeDisplaySection;
+    color: $demo-color-bravo;
   }
 }
 

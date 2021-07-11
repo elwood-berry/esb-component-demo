@@ -15,10 +15,10 @@
     <!-- HEADER: IMG OVERLAY-->
     <header fxLayout="row">
       <div class="core-col" fxFlex="15%">
-        <img class="" [src]="imgBroker" [alt]="{broker}}">
+        <img class="" [src]="imgBroker" [alt]="broker">
       </div>
       <div class="core-col" fxFlex="85%">
-        <div class="dsply__broker-name">{{broker}}</div>
+        <div class="dsply__broker-name">Brokered by {{broker}}</div>
         <mat-chip *ngIf="new">New <span>- 18 Hours Ago</span> </mat-chip>
       </div>
     </header>
@@ -39,18 +39,28 @@
 
   </div>
 
-  <img mat-card-image [src]="" alt="">
+  <img mat-card-image [src]="imgHome" alt="">
 
 
   <mat-card-content>
-    <div class="">For Sale</div>
-    <div class=""><span class="">$</span> <span class="">1,000,000</span></div>
-    <div class=""></div>
-    <div class=""></div>
-    <div class=""></div>
-    <div class=""></div>
 
-    <div class="">
+    <div class="dsply__price-info">
+      <div class="dsply__status">{{status}}</div>
+      <div class="">
+        <span class="">$ </span>
+        <span class="dsply__price">{{price}}</span>
+      </div>
+    </div>
+
+
+    <div class="dsply__home-stats" fxLayout="row">
+      <div class="dsply__bed">{{bed}}<span> bed</span></div>
+      <div class="dsply__bath">{{bath}}<span> bath</span></div>
+      <div class="dsply__sqft">{{sqft}}<span> sqft</span></div>
+      <div class="dsply__sqftlot">{{sqftlot}}<span> acre lot</span></div>
+    </div>
+
+    <div class="dsply__full-address">
       {{ address1 }}<br>
       {{ address2 }}<br>
       {{ city }}, {{ state }} {{ zip }}

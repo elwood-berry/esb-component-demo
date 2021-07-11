@@ -15,7 +15,8 @@ import { HomeCardComponent } from './components/home-card/home-card.component';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    MaterialLibraryModule
+    MaterialLibraryModule,
+    FlexLayoutModule
   ],
   declarations: [AppComponent, HomeCardComponent],
   bootstrap: [AppComponent]
